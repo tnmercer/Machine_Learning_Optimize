@@ -56,7 +56,7 @@ Note, the time periods of the cumulative returns have been normalised to start f
 
 ## Alternative Model
 
-As an alternative to the SVM method, a new model was created using the Gaussian Naive Bayes method.
+As an alternative to the SVM method, a new model was created using the Gaussian Naive Bayes (GNB) method.
 
 The model performed comparibly to the baseline and tuned models in terms of accuracy, precision and recall.
 
@@ -65,3 +65,7 @@ The model performed comparibly to the baseline and tuned models in terms of accu
 The model tracked the actual returns for the first 2 years then began to outperform, resulting in the highest return of the tested models.
 
 ![GNB Returns](./Starter_Code/gnb_returns.png)
+
+## Summary Evaluation
+
+The tested models had similar levels of accuracy with some variance in recall. The model that produced the highest overall return, without sacrificing model performance, and is recommended to use is the GNB method.
