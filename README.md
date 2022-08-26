@@ -32,20 +32,20 @@ Rerunning the model with 9 months of training data slightly reduces the overall 
 
 The recall worsens from 95% to 70% for the positives but increases from 3.8% to 31.25% for the negatives.
 
-![classification](./Starter_Code/classification_report_tuned.png)
+![classification tuned](./Starter_Code/classification_report_tuned.png)
 
 The impact on the strategy returns can be seen in the chart below. The model appears skewed by the negative returns in the second half of 2016 and sits below the actual returns for a large portion of the time period. 
 
-![baseline](./Starter_Code/tuned_returns.png)
+![baseline tuned](./Starter_Code/tuned_returns.png)
 
 ### Changing the duration of the moving averages
 Reverting to 3 months of training data and changing the period of the short and long windows for the SMAs from 4 and 100, to 10 and 200 days, slightly increases the overall accuracy and the precision of the model. The recall on the negatives remains poor.
 
-![classification](./Starter_Code/classification_report_tuned_sma.png)
+![classification tuned sma](./Starter_Code/classification_report_tuned_sma.png)
 
 The chart shows that the strategy tracks the actual returns well for the first couple of years but then significantly underperforms.
 
-![baseline](./Starter_Code/tuned_returns_sma.png)
+![baseline tuned sma](./Starter_Code/tuned_returns_sma.png)
 
 ### Conclusion of Tuned SVM
 
@@ -60,7 +60,7 @@ As an alternative to the SVM method, a new model was created using the Gaussian 
 
 The model performed comparibly to the baseline and tuned models in terms of accuracy, precision and recall.
 
-![classification](./Starter_Code/classification_report_gnb.png)
+![classification alt](./Starter_Code/classification_report_gnb.png)
 
 The model tracked the actual returns for the first 2 years then began to outperform, resulting in the highest return of the tested models.
 
